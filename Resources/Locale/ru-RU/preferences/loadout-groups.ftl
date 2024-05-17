@@ -149,6 +149,12 @@ loadout-group-paramedic-jumpsuit = Парамедик, комбинезон
 loadout-group-paramedic-outerclothing = Парамедик, верхняя одежда
 loadout-group-paramedic-shoes = Парамедик, обувь
 loadout-group-paramedic-backpack = Парамедик, рюкзак
+loadout-group-brigmedic-head = Бригмедик, голова
+loadout-group-brigmedic-jumpsuit = Бригмедик, комбинезон
+loadout-group-brigmedic-outerclothing = Бригмедик, верхняя одежда
+loadout-group-brigmedic-shoes = Бригмедик, обувь
+loadout-group-brigmedic-backpack = Бригмедик, рюкзак
+loadout-group-brigmedic-mask = Бригмедик, маска
 # Wildcards
 loadout-group-reporter-jumpsuit = Репортёр, комбинезон
 loadout-group-boxer-jumpsuit = Боксёр, комбинезон
