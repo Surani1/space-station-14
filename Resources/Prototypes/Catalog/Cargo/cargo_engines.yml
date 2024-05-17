@@ -8,7 +8,6 @@
   category: cargoproduct-category-name-engineering
   group: market
 
-
 - type: cargoProduct
   id: EngineSingularityGenerator
   icon:
