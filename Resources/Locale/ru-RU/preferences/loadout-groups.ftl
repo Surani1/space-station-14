@@ -150,7 +150,7 @@ loadout-group-paramedic-outerclothing = Парамедик, верхняя од�
 loadout-group-paramedic-shoes = Парамедик, обувь
 loadout-group-paramedic-backpack = Парамедик, рюкзак
 
-#ss220-brigmedic-loadout
+# SS220-Brigmedic
 loadout-group-brigmedic-head = Бригмедик, голова
 loadout-group-brigmedic-jumpsuit = Бригмедик, комбинезон
 loadout-group-brigmedic-outerclothing = Бригмедик, верхняя одежда

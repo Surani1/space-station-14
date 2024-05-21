@@ -185,7 +185,7 @@ loadout-group-paramedic-outerclothing = Paramedic outer clothing
 loadout-group-paramedic-shoes = Paramedic shoes
 loadout-group-paramedic-backpack = Paramedic backpack
 
-#ss220-brigmedic-loadout
+# SS220-Brigmedic
 loadout-group-brigmedic-head = Brigmedic head
 loadout-group-brigmedic-jumpsuit = Brigmedic jumpsuit
 loadout-group-brigmedic-outerclothing = Brigmedic outer clothing
