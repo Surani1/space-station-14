@@ -62,7 +62,7 @@
   - type: Sprite
     sprite: SS220/Structures/Walls/shuttle_blue.rsi
   - type: Icon
-    sprite: SSS220/Structures/Walls/shuttle_blue.rsi
+    sprite: SS220/Structures/Walls/shuttle_blue.rsi
 
 - type: entity
   parent: WallShuttle
