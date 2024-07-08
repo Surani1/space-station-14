@@ -1,8 +1,10 @@
 # © SS220, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
 
+#Абстрактный ублюдок по запросу декслера
 - type: entity
-  id: FrankensteinTacmap
-  name: huge tactical map
+  id: TacmapBase
+  name: tactic map
+  abstract: true
   placement:
     mode: SnapgridCenter
   components:
@@ -33,6 +35,16 @@
       fix1:
         shape:
           !type:PhysShapeAabb
+
+#Сами карточки
+- type: entity
+  id: FrankensteinTacmap
+  parent: TacmapBase
+  name: huge tactical map
+  components:
+  - type: Sprite
+    layers:
+      - state: map
   - type: TabletopGame
     boardName: tabletop-frankenstein-tacmap
     size: 678,591
@@ -44,7 +56,7 @@
 - type: entity
   id: NoxTacmap
   name: huge tactical map
-  parent: FrankensteinTacmap
+  parent: TacmapBase
   placement:
     mode: SnapgridCenter
   components:
@@ -62,7 +74,7 @@
 - type: entity
   id: AxiomaTacmap
   name: huge tactical map
-  parent: FrankensteinTacmap
+  parent: TacmapBase
   placement:
     mode: SnapgridCenter
   components:
@@ -80,7 +92,7 @@
 - type: entity
   id: EclipseTacmap
   name: huge tactical map
-  parent: FrankensteinTacmap
+  parent: TacmapBase
   placement:
     mode: SnapgridCenter
   components:
