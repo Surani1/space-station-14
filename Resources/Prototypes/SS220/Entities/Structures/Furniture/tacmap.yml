@@ -12,8 +12,6 @@
   - type: Sprite
     sprite: SS220/Objects/Misc/sec_tacmap.rsi
     drawdepth: SmallObjects
-    layers:
-      - state: map
   - type: Transform
   - type: InteractionOutline
   - type: Clickable
