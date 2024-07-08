@@ -11580,28 +11580,6 @@ entities:
     missingComponents:
     - MachineBoard
     - Item
-- proto: SignalButton
-  entities:
-  - uid: 4
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 19.5,5.5
-      parent: 104
-    - type: DeviceLinkSource
-      linkedPorts:
-        invalid:
-        - Pressed: DoorBolt
-  - uid: 958
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 15.5,5.5
-      parent: 104
-    - type: DeviceLinkSource
-      linkedPorts:
-        invalid:
-        - Pressed: DoorBolt
   - uid: 3191
     components:
     - type: Transform
