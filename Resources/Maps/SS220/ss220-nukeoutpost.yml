@@ -11580,6 +11580,8 @@ entities:
     missingComponents:
     - MachineBoard
     - Item
+- proto: SignalButton
+  entities:
   - uid: 3191
     components:
     - type: Transform
