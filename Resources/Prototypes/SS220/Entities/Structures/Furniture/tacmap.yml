@@ -5,6 +5,7 @@
   id: TacmapBase
   name: tactic map
   abstract: true
+  noSpawn: true
   placement:
     mode: SnapgridCenter
   components:
