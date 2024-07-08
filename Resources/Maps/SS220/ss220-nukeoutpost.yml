@@ -11596,7 +11596,7 @@ entities:
         - Pressed: Toggle
 - proto: SignalTrigger
   entities:
-  - uid: 505
+  - uid: 505 
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
