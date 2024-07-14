@@ -80,6 +80,7 @@
   - CommonBackpack
   - Glasses
   - Trinkets
+  - Gloves #SS220-IAA-Loadouts
 
 - type: roleLoadout
   id: JobChaplain
@@ -184,7 +185,7 @@
   groups:
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
-  - StationEngineerBackpack
+  - ChiefEngineerBack #ss220-ce-fix
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
