@@ -1,4 +1,4 @@
-#Spider queen webs 
+#Spider queen webs
 
 #Base
 - type: entity
@@ -85,7 +85,7 @@
           damage: 30
         behaviors:
         - !type:DoActsBehavior
-          acts: [ "Destruction" ]  
+          acts: [ "Destruction" ]
     - type: SpeedModifierContacts
       walkSpeedModifier: 0.25
       sprintSpeedModifier: 0.25
@@ -106,7 +106,7 @@
           damage: 50
         behaviors:
         - !type:DoActsBehavior
-          acts: [ "Destruction" ]  
+          acts: [ "Destruction" ]
     - type: SpeedModifierContacts
       walkSpeedModifier: 0.15
       sprintSpeedModifier: 0.15
