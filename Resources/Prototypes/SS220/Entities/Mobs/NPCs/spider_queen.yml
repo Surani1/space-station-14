@@ -2,12 +2,16 @@
 - type: entity
   parent:
   - MobAtmosStandard
-  - MobSpaceBasic
+  - SimpleMobBase
+  - MobCombat
   id: BaseMobSpiderQueen
   abstract: true
   name: Probca
   description: spider dance
   components:
+  - type: NpcFactionMember
+    factions:
+    - SpiderQueen
   - type: Insulated
   - type: CombatMode
   - type: InputMover
