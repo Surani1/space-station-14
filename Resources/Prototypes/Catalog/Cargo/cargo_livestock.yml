@@ -227,15 +227,3 @@
   cost: 5000
   category: cargoproduct-category-name-livestock
   group: market
-
-#SS220-begin
-#- type: cargoProduct
-#  id: LivestockCrocodile
-#  icon:
-#    sprite: SS220/Mobs/Animals/crocodile.rsi
-#    state: croc
-#  product: CrateNPCCrocodileLocked #ss220-locked-update
-#  cost: 5000
-#  category: cargoproduct-category-name-livestock
-#  group: market
-#SS220-end - В целом можно закинуть крокодила, хз почему его нет
