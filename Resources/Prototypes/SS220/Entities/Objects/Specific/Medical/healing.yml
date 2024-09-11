@@ -43,7 +43,7 @@
           Quantity: 10
 
 - type: entity
-  name: баночка для таблеток психолога
+  name: баночка таблеток психоактивных веществ
   description: Странная баночка таблеток странного врача.
   parent: PillCanister
   id: PillCanisterPsycho
