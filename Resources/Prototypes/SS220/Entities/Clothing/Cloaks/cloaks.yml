@@ -17,3 +17,40 @@
   components:
   - type: Sprite
     sprite: SS220/Clothing/Neck/Cloaks/whitecapcloakformal.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakAlisa
+  name: сердце Алисы
+  description: Огромное доброе сердце, запечатанное в куске ткани.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Neck/Cloaks/AlisaCloak.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodHeartFinaly
+    requiredSlot:
+    - neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+# SPONSOR
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakFloppa
+  name: шкура Шлёпы
+  description: Это - не то, что вы думаете
+  suffix: Sponsor # А точно ли он спонсор?
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Neck/Cloaks/FloppaCloak.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatFloppa
+    requiredSlot:
+    - neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
