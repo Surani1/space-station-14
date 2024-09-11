@@ -1,3 +1,5 @@
+# © SS220, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckProtectBundle
@@ -13,3 +15,14 @@
         coefficients:
           Blunt: 0.90
           Slash: 0.90
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckAmuletDruid #SS220 druid loadout
+  name: druid amulet
+  description: A beautiful amulet that emphasizes harmony with nature and most likely endows its wearer with the power of the earth.
+  components:
+    - type: Sprite
+      sprite: SS220/Clothing/Neck/druid_amulet.rsi
+    - type: Clothing
+      sprite: SS220/Clothing/Neck/druid_amulet.rsi

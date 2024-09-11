@@ -1,3 +1,5 @@
+# © SS220, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
+
 - type: entity
   parent: ClothingOuterBase
   id: ClothingOuterArmorBobmer
@@ -24,3 +26,16 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.001
     coolingCoefficient: 0.001
+
+- type: entity
+  parent: ClothingOuterBaseToggleable
+  id: ClothingOuterHoodieChaplainWhite
+  name: chaplain's white hoodie
+  description: White and strict chaplain hoodie.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/OuterClothing/Misc/chaplain_hoodiewhite.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/OuterClothing/Misc/chaplain_hoodiewhite.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodChaplainHoodWhite
