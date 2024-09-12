@@ -140,4 +140,4 @@ accent-german-words-62 = авто
 accent-german-words-replace-62 = auto
 #ss220-accent-add-begin
 accent-german-words-63 = это
-accent-german-words-replace-62 = das ist
+accent-german-words-replace-63 = das ist
