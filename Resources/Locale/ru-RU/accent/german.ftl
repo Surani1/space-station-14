@@ -108,7 +108,6 @@ accent-german-words-replace-50 = krankenwagen
 accent-german-words-51 = до встречи
 accent-german-words-51-2 = Досвидания
 accent-german-words-replace-51 = auf Wiedersehen
-accent-german-words-replace-52 = auf Wiedersehen
 accent-german-words-52 = пока
 accent-german-words-replace-52 = tschüss
 accent-german-words-53 = пока пока
