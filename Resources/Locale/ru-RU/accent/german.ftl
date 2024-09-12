@@ -67,7 +67,8 @@ accent-german-words-32 = травка
 accent-german-words-32-2 = капуста
 accent-german-words-replace-32 = kraut
 accent-german-words-33 = водка
-accent-german-words-replace-33 = wodka
+#ss220 wodka --> Branntwein
+accent-german-words-replace-33 = Branntwein
 accent-german-words-34 = рюкзак
 accent-german-words-replace-34 = rucksack
 accent-german-words-35 = медикаменты
@@ -105,7 +106,9 @@ accent-german-words-replace-49 = guten Tag
 accent-german-words-50 = скорая
 accent-german-words-replace-50 = krankenwagen
 accent-german-words-51 = до встречи
+accent-german-words-51-2 = Досвидания
 accent-german-words-replace-51 = auf Wiedersehen
+accent-german-words-replace-52 = auf Wiedersehen
 accent-german-words-52 = пока
 accent-german-words-replace-52 = tschüss
 accent-german-words-53 = пока пока
@@ -136,3 +139,6 @@ accent-german-words-61-5 = тесла
 accent-german-words-replace-61 = kugelblitz
 accent-german-words-62 = авто
 accent-german-words-replace-62 = auto
+#ss220-accent-add-begin
+accent-german-words-63 = это
+accent-german-words-replace-62 = das ist
