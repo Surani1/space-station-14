@@ -181,6 +181,12 @@ public sealed partial class TTSSystem
             {"krankenhaus", "Кранкнхауз"},
             {"kugelblitz", "Кьюгельблиц"},
             {"ist", "Ыст"},
+            {"pulkzerstörer", "Пулькцерштёрер"},
+            {"pulkzerstörers", "Пулькцерштёрер"},
+            {"pulkzerstörere", "Пулькцерштёрер"},
+            {"offizier", "Оффизые"},
+            {"offiziere", "Оффизыер"},
+            {"offiziers", "Оффизыерс"},
             // ss220 fix deutch end
         };
 
