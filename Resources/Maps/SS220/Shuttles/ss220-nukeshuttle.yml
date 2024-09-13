@@ -735,8 +735,6 @@ entities:
       - 1308
       - 1307
       - 1306
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AccessReader
       access:
       - - NuclearOperative
@@ -753,8 +751,6 @@ entities:
       - 88
       - 1321
       - 1323
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AccessReader
       access:
       - - NuclearOperative
@@ -773,8 +769,6 @@ entities:
       - 1314
       - 1310
       - 1318
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AccessReader
       access:
       - - NuclearOperative
@@ -829,91 +823,57 @@ entities:
     - type: AccessReader
       access:
       - - NuclearOperative
-- proto: AirlockMaint
-  entities:
-  - uid: 1480
-    components:
-    - type: Transform
-      pos: -2.5,-4.5
-      parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
-  - uid: 1481
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 3.5,-4.5
-      parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
 - proto: AirlockSyndicateGlassLocked
   entities:
-  - uid: 1518
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,5.5
-      parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
-  - uid: 1519
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 2.5,5.5
-      parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
-  - uid: 1520
+  - uid: 381
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,1.5
       parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
-  - uid: 1521
+  - uid: 382
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,1.5
       parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
-- proto: AirlockSyndicateLocked
-  entities:
-  - uid: 1482
-    components:
-    - type: Transform
-      pos: 0.5,-4.5
-      parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
-  - uid: 1524
+  - uid: 383
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
+      pos: 2.5,5.5
+      parent: 73
+  - uid: 384
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -1.5,5.5
+      parent: 73
+- proto: AirlockSyndicateLocked
+  entities:
+  - uid: 1
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
       pos: -3.5,-2.5
       parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
-  - uid: 1525
+  - uid: 385
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 3.5,-4.5
+      parent: 73
+  - uid: 386
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 4.5,-2.5
       parent: 73
-    - type: AccessReader
-      access:
-      - - NuclearOperative
+  - uid: 387
+    components:
+    - type: Transform
+      pos: -2.5,-4.5
+      parent: 73
 - proto: AirSensor
   entities:
   - uid: 1318
@@ -1033,131 +993,94 @@ entities:
     - type: Transform
       pos: -3.5,11.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1362
   - uid: 1346
     components:
     - type: Transform
       pos: 4.5,11.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1361
   - uid: 1347
     components:
     - type: Transform
       pos: -0.5,13.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1360
   - uid: 1348
     components:
     - type: Transform
       pos: 0.5,13.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1360
   - uid: 1349
     components:
     - type: Transform
       pos: 1.5,13.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1360
   - uid: 1350
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -5.5,7.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1360
   - uid: 1351
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -5.5,6.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1360
   - uid: 1352
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,6.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1360
   - uid: 1353
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,7.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1360
   - uid: 1354
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,1.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1363
   - uid: 1355
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,2.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1363
   - uid: 1356
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -4.5,1.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1363
   - uid: 1357
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -4.5,2.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1363
   - uid: 1358
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -1.5,-9.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1363
   - uid: 1359
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -1.5,-8.5
       parent: 73
-    - type: DeviceLinkSink
-      links:
-      - 1363
+- proto: BorgCharger
+  entities:
+  - uid: 388
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 4.5,-5.5
+      parent: 73
 - proto: ButtonFrameCaution
   entities:
   - uid: 1366
@@ -3089,8 +3012,6 @@ entities:
     - type: Transform
       pos: 3.5,-9.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
 - proto: GasMinerOxygen
   entities:
   - uid: 1315
@@ -3098,8 +3019,6 @@ entities:
     - type: Transform
       pos: 5.5,-9.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
 - proto: GasMixer
   entities:
   - uid: 1316
@@ -3111,8 +3030,6 @@ entities:
     - type: GasMixer
       inletTwoConcentration: 0.20999998
       inletOneConcentration: 0.79
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
 - proto: GasPassiveVent
@@ -3123,16 +3040,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,-8.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
   - uid: 1465
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 5.5,-8.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
 - proto: GasPipeBend
@@ -3701,8 +3614,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,-2.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 1402
@@ -3710,8 +3621,6 @@ entities:
     - type: Transform
       pos: -0.5,11.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 1403
@@ -3720,8 +3629,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,5.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 1404
@@ -3730,8 +3637,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -2.5,1.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 1405
@@ -3740,8 +3645,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,1.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 1413
@@ -3750,8 +3653,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -2.5,-7.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 1415
@@ -3760,8 +3661,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 4.5,-5.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#0000FFFF'
   - uid: 1463
@@ -3770,8 +3669,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,-9.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
 - proto: GasVentScrubber
@@ -3781,8 +3678,6 @@ entities:
     - type: Transform
       pos: 0.5,11.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
   - uid: 1449
@@ -3791,8 +3686,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,4.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
   - uid: 1450
@@ -3801,8 +3694,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,2.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
   - uid: 1451
@@ -3811,8 +3702,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -2.5,2.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
   - uid: 1452
@@ -3821,8 +3710,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-2.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
   - uid: 1453
@@ -3831,8 +3718,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,-5.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
   - uid: 1454
@@ -3841,8 +3726,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -3.5,-7.5
       parent: 73
-    - type: AtmosDevice
-      joinedGrid: 73
     - type: AtmosPipeColor
       color: '#FF0000FF'
 - proto: GeneratorBasic15kW
@@ -4031,13 +3914,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: SyndicateMicrowave
-  entities:
-  - uid: 1515
-    components:
-    - type: Transform
-      pos: -4.5,7.5
-      parent: 73
 - proto: Lamp
   entities:
   - uid: 1299
@@ -4559,9 +4435,6 @@ entities:
           showEnts: False
           occludes: True
           ent: 1322
-    - type: DeviceLinkSink
-      links:
-      - 1369
   - uid: 1344
     components:
     - type: Transform
@@ -4586,9 +4459,6 @@ entities:
           showEnts: False
           occludes: True
           ent: 1474
-    - type: DeviceLinkSink
-      links:
-      - 1368
 - proto: SignalButton
   entities:
   - uid: 1368
@@ -4717,7 +4587,7 @@ entities:
     - type: Transform
       pos: -4.5,-8.5
       parent: 73
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 1507
     components:
@@ -4775,6 +4645,13 @@ entities:
     - type: AccessReader
       access:
       - - NuclearOperative
+- proto: SyndicateMicrowave
+  entities:
+  - uid: 1515
+    components:
+    - type: Transform
+      pos: -4.5,7.5
+      parent: 73
 - proto: SyndieFlag
   entities:
   - uid: 1303
@@ -5047,11 +4924,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,-5.5
-      parent: 73
-  - uid: 1543
-    components:
-    - type: Transform
-      pos: 4.5,-5.5
       parent: 73
 - proto: ToolboxSyndicateFilled
   entities:
