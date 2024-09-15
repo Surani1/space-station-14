@@ -168,7 +168,7 @@ accent-german-words-54 = fantastic
 accent-german-words-replace-54 = fantastisch
 
 accent-german-words-55 = changeling
-accent-german-words-replace-55 = doppelgфnger
+accent-german-words-replace-55 = doppelganger
 
 accent-german-words-56 = forbidden
 accent-german-words-56-2 = prohibited
