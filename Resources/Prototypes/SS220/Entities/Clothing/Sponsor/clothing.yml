@@ -361,8 +361,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakHeadDevelopment
-  name: плащ ведающего командования
-  description: Особый плащ, подчеркивающий статус носителя в великой и страшной группировке development. Именно эти существа, именно с этим плащем ответственны за все ваши невзгоды.
+  name: плащ ведающего созидания
+  description: Особый плащ, владельцам которого приписывают власть над сотворением самого мира.
   suffix: Sponsor # Награда ведущих разработчиков
   components:
   - type: Sprite
