@@ -435,7 +435,6 @@
         Stamina: 1
     soundHit:
       path: /Audio/Items/Toys/mousesqueek.ogg
-    state: icon
   - type: Item
     size: Tiny
   - type: Tag
