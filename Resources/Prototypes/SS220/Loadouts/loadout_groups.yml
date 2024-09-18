@@ -46,6 +46,16 @@
 
   # Офицер "Синий Щит" (Начало)
 - type: loadoutGroup
+  id: BlueShieldNeck
+  name: loadout-group-blueshield-neck
+  minLimit: 0
+  loadouts:
+  - SecurityHolster
+  - Headphones
+  - ProtectGear
+  - BlueShieldNeckCloak
+
+- type: loadoutGroup
   id: BlueShieldJumpsuit
   name: loadout-group-blueshield-jumpsuit
   loadouts:
