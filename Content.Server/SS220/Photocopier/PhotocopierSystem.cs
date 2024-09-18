@@ -20,6 +20,7 @@ using Robust.Shared.Containers;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Audio.Systems;
+using Content.Shared.Power;
 
 namespace Content.Server.SS220.Photocopier;
 
@@ -341,7 +342,7 @@ public sealed partial class PhotocopierSystem : EntitySystem
             _popup.PopupEntity(Loc.GetString("photocopier-popup-butt-scan"), uid);
 
         var dataToCopy = new Dictionary<Type, IPhotocopiedComponentData>();
-        var metaDataToCopy = new PhotocopyableMetaData() {PrototypeId = "ButtScan"};
+        var metaDataToCopy = new PhotocopyableMetaData() { PrototypeId = "ButtScan" };
 
         var buttScanData = new ButtScanPhotocopiedData() { ButtTexturePath = speciesPrototype.ButtScanTexture };
         dataToCopy.Add(typeof(ButtScanComponent), buttScanData);
@@ -567,6 +568,6 @@ public sealed partial class PhotocopierSystem : EntitySystem
             assIsOnScanner,
             component.MaxQueueLength);
 
-        _userInterface.TrySetUiState(uid, PhotocopierUiKey.Key, state);
+        _userInterface.SetUiState(uid, PhotocopierUiKey.Key, state);
     }
 }

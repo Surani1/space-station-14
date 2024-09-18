@@ -1,0 +1,21 @@
+# © SS220, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
+
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalGlassScienceLocked
+  suffix: External, Glass, Scince, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearch ]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassEscapePodLocked
+  suffix: External, EscapePod, Glass, Docking, Locked
+  components:
+  - type: PriorityDock
+    tag: EscapePod
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExternal ]

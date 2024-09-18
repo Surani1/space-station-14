@@ -22,4 +22,13 @@ public sealed class CCVars220
     /// </summary>
     public static readonly CVarDef<string> InfoLinksBoosty =
         CVarDef.Create("infolinks.boosty", "", CVar.SERVER | CVar.REPLICATED);
+
+    public static readonly CVarDef<int> TraitorDeathMatchStartingBalance =
+        CVarDef.Create("game.traitor_deathmatch_starting_balance", 20, CVar.SERVER);
+
+    /// <summary>
+    /// Delay of ahelp messages for non-admins.
+    /// </summary>
+    public static readonly CVarDef<float> AdminAhelpMessageDelay =
+        CVarDef.Create("admin.ahelp_message_delay", 5f, CVar.SERVERONLY);
 }

@@ -43,16 +43,26 @@ public sealed class RadioSystem : EntitySystem
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
 
+    private EntityQuery<TelecomExemptComponent> _exemptQuery;
+
     public override void Initialize()
     {
         base.Initialize();
         SubscribeLocalEvent<IntrinsicRadioReceiverComponent, RadioReceiveEvent>(OnIntrinsicReceive);
         SubscribeLocalEvent<IntrinsicRadioTransmitterComponent, EntitySpokeEvent>(OnIntrinsicSpeak);
+
+        //SS220 PAI with encryption keys begin
+        SubscribeLocalEvent<IntrinsicRadioReceiverComponent, EncryptionChannelsChangedEvent>(OnEncryptionChannelsChangeReceiver);
+        SubscribeLocalEvent<IntrinsicRadioTransmitterComponent, EncryptionChannelsChangedEvent>(OnEncryptionChannelsChangeTransmitter);
+        //SS220 PAI with encryption keys end
+
+        _exemptQuery = GetEntityQuery<TelecomExemptComponent>();
     }
 
     private void OnIntrinsicSpeak(EntityUid uid, IntrinsicRadioTransmitterComponent component, EntitySpokeEvent args)
     {
-        if (args.Channel != null && component.Channels.Contains(args.Channel.ID))
+        if (args.Channel != null && (component.Channels.Contains(args.Channel.ID) ||
+            component.EncryptionKeyChannels.Contains(args.Channel.ID))) //SS220 PAI with encryption keys
         {
             SendRadioMessage(uid, args.Message, args.Channel, uid);
             args.Channel = null; // prevent duplicate messages from other listeners.
@@ -130,7 +140,7 @@ public sealed class RadioSystem : EntitySystem
             NetEntity.Invalid,
             null);
         var chatMsg = new MsgChatMessage { Message = chat };
-        var ev = new RadioReceiveEvent(message, messageSource, channel, chatMsg, new());
+        var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg, new());
 
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);
@@ -139,9 +149,8 @@ public sealed class RadioSystem : EntitySystem
 
         var sourceMapId = Transform(radioSource).MapID;
         var hasActiveServer = HasActiveServer(sourceMapId, channel.ID);
-        var hasMicro = HasComp<RadioMicrophoneComponent>(radioSource);
+        var sourceServerExempt = _exemptQuery.HasComp(radioSource);
 
-        var speakerQuery = GetEntityQuery<RadioSpeakerComponent>();
         var radioQuery = EntityQueryEnumerator<ActiveRadioComponent, TransformComponent>();
         while (canSend && radioQuery.MoveNext(out var receiver, out var radio, out var transform))
         {
@@ -156,7 +165,7 @@ public sealed class RadioSystem : EntitySystem
                 continue;
 
             // don't need telecom server for long range channels or handheld radios and intercoms
-            var needServer = !channel.LongRange && (!hasMicro || !speakerQuery.HasComponent(receiver));
+            var needServer = !channel.LongRange && !sourceServerExempt;
             if (needServer && !hasActiveServer)
                 continue;
 
@@ -244,4 +253,25 @@ public sealed class RadioSystem : EntitySystem
         }
         return false;
     }
+
+    //SS220 PAI with encryption keys begin
+    private void OnEncryptionChannelsChangeTransmitter(Entity<IntrinsicRadioTransmitterComponent> entity, ref EncryptionChannelsChangedEvent args)
+    {
+        if (args.Component.Channels.Count == 0)
+            entity.Comp.EncryptionKeyChannels.Clear();
+        else
+            entity.Comp.EncryptionKeyChannels = new(args.Component.Channels);
+    }
+
+    private void OnEncryptionChannelsChangeReceiver(Entity<IntrinsicRadioReceiverComponent> entity, ref EncryptionChannelsChangedEvent args)
+    {
+        if (!TryComp<ActiveRadioComponent>(entity.Owner, out var activeRadio))
+            return;
+
+        HashSet<string> channels = entity.Comp.Channels;
+        channels.UnionWith(args.Component.Channels);
+
+        activeRadio.Channels = new(channels);
+    }
+    //SS220 PAI with encryption keys end
 }

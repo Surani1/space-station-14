@@ -27,6 +27,16 @@
 
 - type: entity
   parent: Holoprojector
+  id: HoloprojectorEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  parent: Holoprojector
   id: HoloprojectorBorg
   suffix: borg
   components:
@@ -48,7 +58,7 @@
   components:
   - type: HolosignProjector
     signProto: HoloFan
-    chargeUse: 120
+    chargeUse: 110 #SS220 holo buff. 120 -> 110. 6 charges
   - type: Sprite
     sprite: Objects/Devices/Holoprojectors/atmos.rsi
     state: icon
@@ -57,6 +67,16 @@
       - HolofanProjector
   - type: StaticPrice
     price: 80
+
+- type: entity
+  parent: HolofanProjector
+  id: HolofanProjectorEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
 
 - type: entity
   parent: Holoprojector
@@ -75,6 +95,16 @@
         - HolofanProjector
     - type: StaticPrice
       price: 130
+
+- type: entity
+  parent: HoloprojectorField
+  id: HoloprojectorFieldEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
 
 - type: entity
   parent: Holoprojector

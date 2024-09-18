@@ -1,5 +1,15 @@
 - type: speechVerb
   id: RoxiMob
+  name: chat-speech-verb-name-roxi
   speechVerbStrings:
   - chat-speech-verb-canine-1
   - chat-speech-verb-canine-2
+
+- type: speechVerb
+  id: Vulp
+  name: chat-speech-verb-name-vulpin
+  speechVerbStrings:
+  - chat-speech-verb-vulpin-1
+  - chat-speech-verb-vulpin-2
+  - chat-speech-verb-vulpin-3
+

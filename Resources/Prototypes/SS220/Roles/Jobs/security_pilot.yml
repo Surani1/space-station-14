@@ -6,9 +6,13 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 # SS220-RoleTime
+      time: 54000 # SS220-RoleTime 2
+    - !type:SpeciesRequirement #SS220-jobbans begin
+      inverted: true
+      species:
+      - Felinid #SS220-jobbans end
   startingGear: SecurityPilotGear
-  icon: "JobIconSecurityOfficer"
+  icon: "JobIconSecurityPilot"
   supervisors: job-supervisors-hos
   canBeAntag: false
   access:
@@ -24,14 +28,16 @@
 - type: startingGear
   id: SecurityPilotGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSec
-    back: ClothingBackpackSecurityPilotFilled
-    shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
-    id: SecurityPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
+    gloves: ClothingHandsGlovesCombat #SS220 PilotsGloves
     pocket1: WeaponPistolMk58Nonlethal
-  innerClothingSkirt: ClothingUniformJumpskirtSec
-  satchel: ClothingBackpackSatchelSecurityPilotFilled
-  duffelbag: ClothingBackpackDuffelSecurityPilotFilled
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - MagazinePistolRubber
+    - MagazinePistolRubber
+    - FlashlightSeclite
+    - DrinkRelaxingPeachCan

@@ -113,7 +113,6 @@
   components:
   - type: Clickable
   - type: Slippery
-    launchForwardsMultiplier: 2.0
   - type: Transform
     noRot: true
     anchored: true
@@ -127,6 +126,13 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
+      #ss220 puddle is anchorable start
+      ## Context / examine fixture
+      #fix1:
+        #shape:
+          #!type:PhysShapeCircle
+          #radius: 0.25
+      #ss220 puddle is anchorable end
       slipFixture:
         shape:
           !type:PhysShapeAabb
@@ -142,8 +148,11 @@
     mode: CardinalFlags
   - type: SolutionContainerManager
     solutions:
-      puddle: { maxVol: 1000 }
+      puddle:
+        maxVol: 1000
   - type: Puddle
+  - type: MixableSolution
+    solution: puddle
   - type: Appearance
   - type: ActiveEdgeSpreader
   - type: EdgeSpreader
@@ -160,3 +169,6 @@
     solution: puddle
   - type: BadDrink
   - type: IgnoresFingerprints
+  - type: Tag
+    tags:
+    - DNASolutionScannable

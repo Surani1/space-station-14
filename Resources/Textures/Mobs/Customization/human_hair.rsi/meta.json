@@ -424,6 +424,10 @@
         "directions": 4
       },
       {
+        "name": "long_bedhead2",
+        "directions": 4
+      },
+      {
         "name": "longemo",
         "directions": 4
       },
@@ -664,6 +668,10 @@
         "directions": 4
       },
       {
+        "name": "spookylong",
+        "directions": 4
+      },
+      {
         "name": "stail",
         "directions": 4
       },
@@ -773,6 +781,14 @@
       },
       {
         "name": "tailed",
+        "directions": 4
+      },
+      {
+        "name": "classiclong2",
+        "directions": 4
+      },
+      {
+        "name": "classiclong3",
         "directions": 4
       }
     ]

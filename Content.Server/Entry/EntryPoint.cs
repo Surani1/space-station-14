@@ -18,12 +18,15 @@ using Content.Server.Info;
 using Content.Server.IoC;
 using Content.Server.Maps;
 using Content.Server.NodeContainer.NodeGroups;
+using Content.Server.Objectives;
+using Content.Server.Players;
+using Content.Server.Players.JobWhitelist;
 using Content.Server.Players.PlayTimeTracking;
+using Content.Server.Players.RateLimiting;
 using Content.Server.Preferences.Managers;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
 using Content.Server.SS220.Discord;
-using Content.Server.SS220.PrimeWhitelist;
 using Content.Server.Voting.Managers;
 using Content.Shared.CCVar;
 using Content.Shared.Kitchen;
@@ -74,7 +77,7 @@ namespace Content.Server.Entry
             factory.RegisterIgnore(IgnoredComponents.List);
 
             prototypes.RegisterIgnore("parallax");
-            prototypes.RegisterIgnore("guideEntry");
+            prototypes.RegisterIgnore("wristWatchStyle"); // SS220 Wrist Watch
 
             ServerContentIoC.Register();
 
@@ -113,14 +116,16 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<JoinQueueManager>().Initialize(); // Corvax-Queue
                 IoCManager.Resolve<TTSManager>().Initialize(); // Corvax-TTS
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
-                IoCManager.Resolve<Primelist>().Initialize();
                 IoCManager.Resolve<DiscordPlayerManager>().Initialize(); // SS220 discord player manager
                 IoCManager.Resolve<DiscordBanPostManager>().Initialize(); // SS220 discord ban post manager
-                IoCManager.Resolve<ServerControlController>().Initialize();
+                IoCManager.Resolve<ServerControlController>().Initialize(); // SS220 Backend-Api
+                IoCManager.Resolve<ServerApi>().Initialize();
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();
                 _playTimeTracking.Initialize();
+                IoCManager.Resolve<JobWhitelistManager>().Initialize();
+                IoCManager.Resolve<PlayerRateLimitManager>().Initialize();
             }
         }
 
@@ -155,6 +160,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<IGameMapManager>().Initialize();
                 IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<GameTicker>().PostInitialize();
                 IoCManager.Resolve<IBanManager>().Initialize();
+                IoCManager.Resolve<IConnectionManager>().PostInit();
             }
         }
 
@@ -182,6 +188,7 @@ namespace Content.Server.Entry
         {
             _playTimeTracking?.Shutdown();
             _dbManager?.Shutdown();
+            IoCManager.Resolve<ServerApi>().Shutdown();
         }
 
         private static void LoadConfigPresets(IConfigurationManager cfg, IResourceManager res, ISawmill sawmill)

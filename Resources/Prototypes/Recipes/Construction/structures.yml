@@ -86,7 +86,7 @@
   canRotate: false
   canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked    
+    - !type:TileNotBlocked
 
 - type: construction
   name: clock wall
@@ -115,7 +115,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/wood.rsi
+    sprite: SS220/Structures/Walls/wood.rsi #SS220-Walls-Sprite-Update
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -205,7 +205,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/gold.rsi
+    sprite: SS220/Structures/Walls/gold.rsi #SS220-Walss-Sprite-Update-V4
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -223,7 +223,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: SS220/Structures/Walls/shuttle.rsi #ss220-walls-update
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -241,7 +241,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/shuttleinterior.rsi
+    sprite: SS220/Structures/Walls/shuttleinterior.rsi #ss220-walls-update
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -259,7 +259,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: SS220/Structures/Walls/shuttle_diagonal.rsi #ss220-walls-update
     state: state0
   objectType: Structure
   placementMode: SnapgridCenter
@@ -455,7 +455,7 @@
   startNode: start
   targetNode: tintedWindow
   category: construction-category-structures
-  description: Not clear but tough.
+  description: Not clear, but lasers still pass through.
   canBuildInImpassable: true
   conditions:
     - !type:EmptyOrWindowValidInTile
@@ -480,7 +480,7 @@
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
   icon:
-    sprite: Structures/Windows/clockwork_window.rsi
+    sprite: SS220/Structures/Windows/clockwork_window.rsi #SS220-Walls-Sprite-Update-V3
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -512,7 +512,7 @@
   targetNode: plasmaWindow
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Clear and even tougher, with a purple tint.
+  description: Clear, with a purple tint.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -531,7 +531,7 @@
   targetNode: reinforcedPlasmaWindow
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Fire resistant and even tougher, with a purple tint.
+  description: Clear and even tougher, with a purple tint.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -555,7 +555,7 @@
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
   icon:
-    sprite: Structures/Windows/shuttle_window.rsi
+    sprite: SS220/Structures/Windows/shuttle_window.rsi #ss220-walls-update
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -569,7 +569,7 @@
   targetNode: plasmaWindowDiagonal
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Clear and even tougher, with a purple tint.
+  description: Clear, with a purple tint.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -587,7 +587,7 @@
   targetNode: reinforcedPlasmaWindowDiagonal
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Fire resistant and even tougher, with a purple tint.
+  description: Clear and even tougher, with a purple tint.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -659,7 +659,7 @@
   targetNode: plasmaWindowDirectional
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Clear and even tougher, with a purple tint.
+  description: Clear, with a purple tint.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -677,7 +677,7 @@
   targetNode: plasmaReinforcedWindowDirectional
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Fire resistant and even tougher, with a purple tint.
+  description: Clear and even tougher, with a purple tint.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -695,7 +695,7 @@
   targetNode: uraniumWindow
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Clear and much tougher than regular glass, with added RadAbsorb to protect you from deadly radiation.
+  description: Clear, with added RadAbsorb to protect you from deadly radiation.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -714,7 +714,7 @@
   targetNode: reinforcedUraniumWindow
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Clear and much tougher than regular glass, with added RadAbsorb to protect you from deadly radiation.
+  description: Clear and even tougher, with added RadAbsorb to protect you from deadly radiation.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -733,7 +733,7 @@
   targetNode: uraniumWindowDiagonal
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Clear and much tougher than regular glass, with added RadAbsorb to protect you from deadly radiation.
+  description: Clear, with added RadAbsorb to protect you from deadly radiation.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -751,7 +751,7 @@
   targetNode: reinforcedUraniumWindowDiagonal
   category: construction-category-structures
   canBuildInImpassable: true
-  description: Clear and much tougher than regular glass, with added RadAbsorb to protect you from deadly radiation.
+  description: Clear and even tougher, with added RadAbsorb to protect you from deadly radiation.
   conditions:
     - !type:EmptyOrWindowValidInTile
     - !type:NoWindowsInTile
@@ -774,6 +774,7 @@
     state: closed
   objectType: Structure
   placementMode: SnapgridCenter
+  canRotate: false
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -791,6 +792,24 @@
     state: closed
   objectType: Structure
   placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: thin firelock
+  id: FirelockEdge
+  graph: Firelock
+  startNode: start
+  targetNode: FirelockEdge
+  category: construction-category-structures
+  description: This is a firelock - it locks an area when a fire alarm in the area is triggered. Don't get squished!
+  icon:
+    sprite: Structures/Doors/edge_door_hazard.rsi
+    state: closed
+  placementMode: SnapgridCenter
+  objectType: Structure
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
@@ -1069,6 +1088,179 @@
   conditions:
   - !type:TileNotBlocked
 
+#Wooden fence high
+- type: construction
+  name: wooden high fence
+  id: FenceWood
+  graph: FenceWood
+  startNode: start
+  targetNode: straight
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: straight
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden high fence end
+  id: FenceWoodEnd
+  graph: FenceWood
+  startNode: start
+  targetNode: end
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: end
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden high fence corner
+  id: FenceWoodCorner
+  graph: FenceWood
+  startNode: start
+  targetNode: corner
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: corner
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden high fence t-junction
+  id: FenceWoodTJunction
+  graph: FenceWood
+  startNode: start
+  targetNode: tjunction
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: tjunction
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden high fence gate
+  id: FenceWoodGate
+  graph: FenceWood
+  startNode: start
+  targetNode: gate
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: door_closed
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+#Wooden fence small
+- type: construction
+  name: wooden small fence
+  id: FenceWoodSmall
+  graph: FenceWood
+  startNode: start
+  targetNode: straight_small
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: straight_small
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden small fence end
+  id: FenceWoodEndSmall
+  graph: FenceWood
+  startNode: start
+  targetNode: end_small
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: end_small
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden small fence corner
+  id: FenceWoodCornerSmall
+  graph: FenceWood
+  startNode: start
+  targetNode: corner_small
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: corner_small
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden small fence t-junction
+  id: FenceWoodTJunctionSmall
+  graph: FenceWood
+  startNode: start
+  targetNode: tjunction_small
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: tjunction_small
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  name: wooden small fence gate
+  id: FenceWoodGateSmall
+  graph: FenceWood
+  startNode: start
+  targetNode: gate_small
+  category: construction-category-structures
+  description: Part of a wooden fence meant to cordon off areas.
+  icon:
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: door_closed_small
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+#Airlocks
 - type: construction
   name: airlock
   id: Airlock
@@ -1282,6 +1474,24 @@
   conditions:
     - !type:TileNotBlocked
 
+- type: construction
+  name: strobe light
+  id: LightStrobeFixture
+  graph: LightFixture
+  startNode: start
+  targetNode: strobeLight
+  category: construction-category-structures
+  description: A wall light fixture. Use light bulbs.
+  icon:
+    sprite: Structures/Wallmounts/Lighting/strobe_light.rsi
+    state: base
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
 #conveyor
 - type: construction
   name: conveyor belt
@@ -1418,6 +1628,40 @@
     - !type:TileNotBlocked
 
 - type: construction
+  name: opaque plastic flaps
+  id: PlasticFlapsOpaque
+  graph: PlasticFlapsGraph
+  startNode: start
+  targetNode: opaqueFlaps
+  category: construction-category-structures
+  placementMode: SnapgridCenter
+  description: An opaque plastic flap to let items through and keep people out.
+  objectType: Structure
+  canBuildInImpassable: false
+  icon:
+    sprite: Structures/plastic_flaps.rsi
+    state: plasticflaps
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: carp statue
+  id: CarpStatue
+  graph: CarpStatue
+  startNode: start
+  targetNode: statue
+  category: construction-category-structures
+  placementMode: SnapgridCenter
+  description: A statue of one of the brave carp that got us where we are today. Made with real teeth!
+  objectType: Structure
+  canBuildInImpassable: false
+  icon:
+    sprite: Structures/Specific/carp_statue.rsi
+    state: icon
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
   name: bananium clown statue
   id: BananiumClownStatue
   graph: BananiumStatueClown
@@ -1485,3 +1729,59 @@
     state: closed
   conditions:
     - !type:TileNotBlocked
+
+#SS220-craft-start
+- type: construction
+  name: diagonal shuttle window
+  id: ShuttleWindowDiagonal
+  graph: WindowDiagonal
+  startNode: start
+  targetNode: shuttleWindowDiagonal
+  category: construction-category-structures
+  description: Extra sturdy to resist the pressure of FTL or sustain damage from munitions.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: Structures/Windows/shuttle_window_diagonal.rsi
+    state: state1
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  name: directional uranium window
+  id: UraniumWindowDirectional
+  graph: WindowDirectional
+  startNode: start
+  targetNode: uraniumWindowDirectional
+  category: construction-category-structures
+  description: Clear.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: Structures/Windows/directional.rsi
+    state: uranium_window
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  name: directional reinforced uranium window
+  id: UraniumReinforcedWindowDirectional
+  graph: WindowDirectional
+  startNode: start
+  targetNode: uraniumReinforcedWindowDirectional
+  category: construction-category-structures
+  description: Clear.
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: Structures/Windows/directional.rsi
+    state: uranium_reinforced_window
+  objectType: Structure
+  placementMode: SnapgridCenter
+#SS220-craft-end
