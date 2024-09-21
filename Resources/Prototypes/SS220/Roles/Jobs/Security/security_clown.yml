@@ -1,0 +1,44 @@
+- type: job
+  id: SecurityClown
+  name: клоун СБ
+  description: Устройте смешной арест. Покажите экипажу настояющую шутку правосудия!
+  playTimeTracker: JobSecurityClown
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 300000 # SS220-RoleTime 2
+    - !type:SpeciesRequirement #SS220-jobbans begin
+      inverted: true
+      species:
+      - Felinid #SS220-jobbans end
+  startingGear: SecurityClownGear
+  icon: "JobIconSecurityPilot"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - Clown
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: SecurityClownGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetSecurity
+    belt: ClothingBeltSecurityFilled
+    gloves: ClothingHandsGlovesCombat #SS220 PilotsGloves
+    pocket1: WeaponPistolMk58Nonlethal
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - MagazinePistolRubber
+    - MagazinePistolRubber
+    - FlashlightSeclite
+    - DrinkRelaxingPeachCan

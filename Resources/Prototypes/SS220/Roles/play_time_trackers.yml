@@ -23,6 +23,9 @@
   id: JobSeniorOfficer
 
 - type: playTimeTracker
+  id: JobSecurityClown
+
+- type: playTimeTracker
   id: JobSeniorPhysician
 
 - type: playTimeTracker

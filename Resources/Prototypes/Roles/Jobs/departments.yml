@@ -127,6 +127,7 @@
   - SecurityOfficer
   - Warden
   - SecurityPilot
+  - SecurityClown #ss220
 
 - type: department
   id: Science
