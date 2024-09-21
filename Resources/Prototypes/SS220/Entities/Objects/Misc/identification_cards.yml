@@ -97,6 +97,18 @@
       job: SecurityOfficer
       name: Рокси
 
+- type: entity
+  parent: IDCardStandard
+  id: SecurityClownIDCard
+  name: ID карта (клоун СБ)
+  components:
+    - type: Sprite
+      layers:
+        - state: default
+        - state: idsecurityclown
+    - type: PresetIdCard
+      job: SecurityClown
+
 
 - type: entity
   parent: PassengerIDCard

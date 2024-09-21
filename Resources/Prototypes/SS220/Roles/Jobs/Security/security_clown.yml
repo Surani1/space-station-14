@@ -12,15 +12,14 @@
       species:
       - Felinid #SS220-jobbans end
   startingGear: SecurityClownGear
-  icon: "JobIconSecurityPilot"
-  supervisors: job-supervisors-hos
+  icon: "JobIconSecurityClown"
+  supervisors: job-supervisors-security
   canBeAntag: false
   access:
   - Security
   - Brig
   - Maintenance
   - Service
-  - Clown
   - External
   special:
   - !type:AddImplantSpecial
@@ -29,8 +28,11 @@
 - type: startingGear
   id: SecurityClownGear
   equipment:
+    head: ClothingHeadHelmetBasic
+    id: SecurityClownPDA
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetSecurity
+    outerClothing: ClothingOuterArmorBasic
     belt: ClothingBeltSecurityFilled
     gloves: ClothingHandsGlovesCombat #SS220 PilotsGloves
     pocket1: WeaponPistolMk58Nonlethal

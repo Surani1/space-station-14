@@ -39,6 +39,18 @@
   - SecurityBelt
   - Trinkets
 
+  # Клоун СБ
+
+- type: roleLoadout
+  id: JobSecurityClown
+  groups:
+  - SecurityClownMask
+  - SecurityNeck  #holster loadout
+  - SecurityClownJumpsuit
+  - SecurityBackpack
+  - ClownShoes
+  - Trinkets
+
   # Пилот
 - type: roleLoadout
   id: JobSecurityPilot

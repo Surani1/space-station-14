@@ -123,6 +123,27 @@
   - SecurityHat
   - PilotCapCap
   # Пилот (Конец)
+
+  # Клоун СБ (Начало)
+
+- type: loadoutGroup
+  id: SecurityClownMask
+  name: loadout-group-security-clown-mask
+  loadouts:
+  - ClownSecurityMask
+  - ClownPennywiseMask
+
+- type: loadoutGroup
+  id: SecurityClownJumpsuit
+  name: loadout-group-security-clown-jumpsuit
+  loadouts:
+  - SecurityGrayJumpsuit
+  - SecurityGrayJumpskirt
+  - ClownJumpsuit
+  - ClownJumpskirt
+
+  # Клоун СБ (Конец)
+
 #! Служба безопасности (Конец)
 
 #! Медицинский отдел (Начало)

@@ -26,7 +26,7 @@
   - type: Icon
     sprite: Objects/Devices/pda.rsi
     state: pda-ce_dark
-    
+
 - type: entity
   parent: BasePDA
   id: SeniorServicePDA
@@ -84,3 +84,30 @@
   - type: Icon
     sprite: Objects/Devices/pda.rsi
     state: pda-magistrate
+
+- type: entity
+  parent: BasePDA
+  id: SecurityClownPDA
+  name: КПК клоуна СБ
+  description: Красный, потому что СБ. Белый, потому что клоун.
+  components:
+  - type: Pda
+    id: SecurityClownIDCard
+    state: pda-security-clown
+  - type: PdaBorderColor
+    borderColor: "#731611" #SS220 PDA-Resprite
+  - type: Sprite #SS220 PDA-Resprite-Start
+    sprite: Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "screen-clown"
+      shader: "unshaded"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      visible: false #SS220 PDA-Resprite-End
+  - type: Icon
+    state: pda-security
