@@ -360,7 +360,6 @@
   id: JobHeadOfSecurity
   groups:
   - HeadofSecurityHead
-  - SecurityGlasses #SS220-Two Floppa Iteration
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - SecurityBackpack
@@ -392,6 +391,7 @@
   id: JobSecurityOfficer
   groups:
   - SecurityHead
+  - SecurityGlasses #SS220-Two Floppa Iteration
   - SecurityMask #SS220 mask loadout
   - SecurityNeck #SS220 holster loadout
   - SecurityJumpsuit
