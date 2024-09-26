@@ -36,7 +36,6 @@
   id: JobSeniorOfficer
   groups:
   - SecurityHead
-  - SecurityGlasses #SS220-Two Floppa Iteration
   - SecurityNeck  #holster loadout
   - SeniorSecJumpsuit
   - SecurityBackpack
@@ -51,7 +50,6 @@
   id: JobSecurityPilot
   groups:
   - SecurityPilotHead
-  - SecurityGlasses #SS220-Two Floppa Iteration
   - SecurityNeck #holster loadout
   - SecurityJumpsuit
   - SecurityBackpack

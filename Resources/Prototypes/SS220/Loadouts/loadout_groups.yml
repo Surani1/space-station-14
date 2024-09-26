@@ -322,12 +322,6 @@
   name: loadout-group-medical-neck
   loadouts:
   - WhiteScarf
-  - CoderNeck
-  - MapperNeck
-  - SpriterNeck
-  - TrackerExpertNeck
-  - AdministratorNeck
-  - HeadDeveloperNeck
 
 - type: loadoutGroup
   id: MedicalGlasses

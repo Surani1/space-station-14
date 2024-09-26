@@ -377,7 +377,6 @@
   id: JobWarden
   groups:
   - WardenHead
-  - SecurityGlasses #SS220-Two Floppa Iteration
   - SecurityNeck #SS220 holster loadout
   - WardenJumpsuit
   - SecurityBackpack
@@ -393,7 +392,6 @@
   id: JobSecurityOfficer
   groups:
   - SecurityHead
-  - SecurityGlasses #SS220-Two Floppa Iteration
   - SecurityMask #SS220 mask loadout
   - SecurityNeck #SS220 holster loadout
   - SecurityJumpsuit
@@ -412,7 +410,6 @@
   groups:
   - GroupTankHarness
   - DetectiveHead
-  - SecurityGlasses #SS220-Two Floppa Iteration
   # - DetectiveNeck #SS220 holster to neck
   - DetectiveJumpsuit
   - DetectiveSecBackpack #ss220 backpack noir
