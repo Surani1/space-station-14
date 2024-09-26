@@ -322,6 +322,12 @@
   name: loadout-group-medical-neck
   loadouts:
   - WhiteScarf
+  - CoderNeck
+  - MapperNeck
+  - SpriterNeck
+  - TrackerExpertNeck
+  - AdministratorNeck
+  - HeadDeveloperNeck
 
 - type: loadoutGroup
   id: MedicalGlasses
@@ -560,7 +566,7 @@
 
   # Плащи
 - type: loadoutGroup
-  id: Neck # Не используется
+  id: SponsorNeck # Не используется
   name: loadout-group-neck
   loadouts:
   - CoderNeck
