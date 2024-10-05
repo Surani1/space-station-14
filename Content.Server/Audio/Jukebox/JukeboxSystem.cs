@@ -57,7 +57,8 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
                 return;
             }
 
-            component.AudioStream = Audio.PlayPvs(jukeboxProto.Path, uid, AudioParams.Default.WithMaxDistance(10f))?.Entity;
+            component.AudioStream = Audio.PlayPvs(jukeboxProto.Path, uid, AudioParams.Default.WithVolume(SharedAudioSystem.GainToVolume(component.Gain)).WithMaxDistance(10f))?.Entity;
+            //SS220-jukebox-tweak я ебать насрал
             Dirty(uid, component);
         }
     }
@@ -76,10 +77,15 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
         }
     }
 
+    //SS220-jukebox-tweak-begin
     private void OnJukeboxSetGain(EntityUid uid, JukeboxComponent component, JukeboxSetGainMessage args)
     {
         Audio.SetGain(component.AudioStream, args.Gain);
+
+        component.Gain = args.Gain;
+        Dirty(uid, component);
     }
+    //SS220-jukebox-tweak-end
 
     private void OnPowerChanged(Entity<JukeboxComponent> entity, ref PowerChangedEvent args)
     {

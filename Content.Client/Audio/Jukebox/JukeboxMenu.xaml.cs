@@ -5,6 +5,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Audio.Components;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Input;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -81,7 +82,7 @@ public sealed partial class JukeboxMenu : FancyWindow
         _audio = audio;
         if (_entManager.TryGetComponent(_audio, out AudioComponent? audioComp))
         {
-            VolumeSlider.Value = audioComp.Gain;
+            VolumeSlider.Value = SharedAudioSystem.VolumeToGain(audioComp.Volume);
         }
     }
 

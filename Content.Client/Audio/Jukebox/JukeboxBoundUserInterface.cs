@@ -45,7 +45,7 @@ public sealed class JukeboxBoundUserInterface : BoundUserInterface
 
         _menu.SetTime += SetTime;
 
-        _menu.SetGain += SetGain;
+        _menu.SetGain += SetGain; //ss220-jukebox-tweak-end
         PopulateMusic();
         Reload();
     }
@@ -100,9 +100,11 @@ public sealed class JukeboxBoundUserInterface : BoundUserInterface
         SendMessage(new JukeboxSetTimeMessage(sentTime));
     }
 
+    //ss220-jukebox-tweak-begin
     public void SetGain(float gain)
     {
         SendMessage(new JukeboxSetGainMessage(gain));
     }
+    //ss220-jukebox-tweak-end
 }
 
