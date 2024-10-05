@@ -44,6 +44,8 @@ public sealed class JukeboxBoundUserInterface : BoundUserInterface
         _menu.OnSongSelected += SelectSong;
 
         _menu.SetTime += SetTime;
+
+        _menu.SetGain += SetGain;
         PopulateMusic();
         Reload();
     }
@@ -96,6 +98,11 @@ public sealed class JukeboxBoundUserInterface : BoundUserInterface
         }
 
         SendMessage(new JukeboxSetTimeMessage(sentTime));
+    }
+
+    public void SetGain(float gain)
+    {
+        SendMessage(new JukeboxSetGainMessage(gain));
     }
 }
 

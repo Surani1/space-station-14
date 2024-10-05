@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseHandheldInstrument
+  id: Boombox
+  name: boombox
+  description: Anyway, here's Wonderwall.
+  components:
+  - type: Jukebox
+    onState: on
+    offState: off
+    selectState: select
+  - type: ActivatableUI
+    key: enum.JukeboxUiKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.JukeboxUiKey.Key:
+          type: JukeboxBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+  - type: Sprite
+    sprite: Objects/Fun/Instruments/guitar.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Fun/Instruments/guitar.rsi
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    sprite: Objects/Fun/Instruments/guitar.rsi
