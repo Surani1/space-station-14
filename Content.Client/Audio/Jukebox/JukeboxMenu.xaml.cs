@@ -5,7 +5,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Audio.Components;
-using Robust.Shared.Audio.Systems;
+using Robust.Shared.Audio.Systems; //ss220-jukebox-tweak
 using Robust.Shared.Input;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -80,10 +80,12 @@ public sealed partial class JukeboxMenu : FancyWindow
     public void SetAudioStream(EntityUid? audio)
     {
         _audio = audio;
+        //ss220-jukebox-tweak-begin
         if (_entManager.TryGetComponent(_audio, out AudioComponent? audioComp))
         {
             VolumeSlider.Value = SharedAudioSystem.VolumeToGain(audioComp.Volume);
         }
+        //ss220-jukebox-tweak-end
     }
 
     private void PlaybackSliderKeyUp(Slider args)
