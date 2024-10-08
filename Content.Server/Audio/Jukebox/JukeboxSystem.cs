@@ -80,9 +80,9 @@ public sealed class JukeboxSystem : SharedJukeboxSystem
     //SS220-jukebox-tweak-begin
     private void OnJukeboxSetGain(EntityUid uid, JukeboxComponent component, JukeboxSetGainMessage args)
     {
-        Audio.SetGain(component.AudioStream, args.Gain);
-
-        component.Gain = args.Gain;
+        var gain = Math.Clamp(args.Gain, 0f, 1f);
+        Audio.SetGain(component.AudioStream, gain);
+        component.Gain = gain;
         Dirty(uid, component);
     }
     //SS220-jukebox-tweak-end
