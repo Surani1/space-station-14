@@ -1,0 +1,7 @@
+- type: guideEntry
+  id: SS220SpaceLaw
+  name: guide-entry-rules-space-law
+  priority: 1
+  text: "/ServerInfo/SS220/Guidebook/ServerRules/Security/SpaceLaw.xml"
+  children:
+  - SpaceLawCrimeList
