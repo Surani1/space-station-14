@@ -1,7 +1,20 @@
 - type: guideEntry
   id: SS220SpaceLaw
-  name: guide-entry-rules-space-law
+  name: Космический закон
   priority: 1
-  text: "/ServerInfo/SS220/Guidebook/ServerRules/Security/SpaceLaw.xml"
+  text: "/ServerInfo/SS220/Guidebook/Security/SpaceLaw.xml"
   children:
-  - SpaceLawCrimeList
+  - SS220LethalForce
+  - SS220ArticleDirectory
+
+- type: guideEntry
+  id: SS220LethalForce
+  name: Применение летальной силы
+  priority: 2
+  text: "/ServerInfo/SS220/Guidebook/Security/LethalForce.xml"
+
+- type: guideEntry
+  id: SS220ArticleDirectory
+  name: Справочник статей
+  priority: 1
+  text: "/ServerInfo/SS220/Guidebook/Security/ArticleDirectory.xml"

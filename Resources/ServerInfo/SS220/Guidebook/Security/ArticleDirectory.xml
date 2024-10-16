@@ -1,0 +1,345 @@
+<Document>
+
+  # Космический закон
+  Краткий справочник кодификаторов Закона
+
+  Используйте этот раздел для быстрой ориентации в кодификаторах Закона. Вы можете нажать на название каждой из статей, чтобы перейти к разъяснению.
+
+  Кодификация организована по принципу категории кода (_xx) - ряда несуммируемых преступлений и тяжести преступления (x__).
+
+  ## Космический закон
+  <Table Columns="6">
+    <ColorBox>
+      <Box>
+        Code
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        1-XX - Малозначительные
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        2-XX - Средней тяжести
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        3-XX - Тяжкие
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        4-XX - Особо тяжкие
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        5-XX - высшая мера
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        00
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Ущерб активам станции
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Халатность
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Саботаж
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Крупный саботаж
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        01
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Похищение
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Похищение лица при исполнении
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Непредумышленное убийство
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        02
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Нанесение побоев
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Нападение
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Нападение при отягчающих обстоятельствах
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Покушение на убийство
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Убийство
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        03
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Владение наркотическими средствами
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Распространение наркотических средств
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        04
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Незаконное владение оружием
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Незаконное владение ограниченным вооружением
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        05
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Непристойное поведение
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Мошенничество
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Участие в демонстрациях
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Подстрекательство к демонстрациям
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Мятеж
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        06
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Злоупотребление экипировкой
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Злоупотребление конфискатом
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Фладение контрабандой
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        07
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Мелкая кража
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Ограбление
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Кража
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Кража в крупных размерах
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        08
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Проникновение
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Проникновение со взломов
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Проникновение в зоны ограниченного доступа
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        09
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#698f43">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Сопротивление аресту
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#a69b38">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b0653a">
+      <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
+        Нападение на лицо при исполнении
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#963535">
+      <Box>
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#000000">
+      <Box>
+      </Box>
+    </ColorBox>
+  </Table>
+  <Box Margin="20">
+  ##Малозначительные преступления
+  </Box>
+
+  За все данные преступления предусмотрено наказание в виде официального предупреждения или лишения свободы до 5 минут на усмотрение Службы Безопасности.
+
+  <Table Columns="1">
+    <ColorBox>
+      <Box Orientation="Vertical">
+        100 — Ущерб активам станции
+
+        Личные домашние животные, киборги считаются собственностью станции. Граффити не считается ущербом активам станции, в отличие от уничтожения личных вещей членов экипажа. В случае более серьезного ущерба обратитесь к статье Саботаж.
+
+        Под действие данной статьи попадает:
+
+        - Умышленное, злонамеренное повреждение станции или её имущества в незначительной степени.
+      </Box>
+    </ColorBox>
+  </Table>
+</Document>
