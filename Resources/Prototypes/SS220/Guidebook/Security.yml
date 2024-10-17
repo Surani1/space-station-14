@@ -6,12 +6,19 @@
   children:
   - SS220LethalForce
   - SS220ArticleDirectory
+  - SS220Modificator
 
 - type: guideEntry
   id: SS220LethalForce
   name: Применение летальной силы
   priority: 2
   text: "/ServerInfo/SS220/Guidebook/Security/LethalForce.xml"
+
+- type: guideEntry
+  id: SS220Modificator
+  name: Модификаторы наказаний
+  priority: 3
+  text: "/ServerInfo/SS220/Guidebook/Security/Modificator.xml"
 
 # ТАБЛИЦА КЗ
 
