@@ -2,13 +2,13 @@
   <Box Margin="20">
     ## Уровни применения летальной силы
   </Box>
-  Вам, как сотруднику службы безопасности – одному из наилучшим образом экипированных членов экипажа, доступен широкий спектр передового нелетального вооружения.
+  Вам, как сотруднику [color=red][bold]службы безопасности[/bold][/color] – одному из наилучшим образом экипированных членов экипажа, доступен широкий спектр передового нелетального вооружения.
 
   Ситуаций, разрешающих применение летальной силы, весьма немного. В большинстве случаев, ожидается применение нелетального вооружения, которое зачастую оказывается более чем эффективным средством разрешения напряжённых ситуаций. В целом, если поимка преступника нелетальными средствами представляется возможной, вам следует применять именно такие средства. Если вы этого не сделаете, будьте готовы оправдывать свои действия перед АВД, чтобы сохранить работу, и перед администратором, чтобы не получить джоббан.
 
   При ликвидации на месте, если тело ликвидированного будет находиться в морге, необходимо составить документ по форме "Запрет на реанимацию", копия которого должна быть помещена к трупу ликвидированного.
 
-  Однако, в следующих ситуациях летальная сила применяется:
+  Однако, в следующих ситуациях [color=red][bold]летальная сила[/bold][/color] применяется:
 
   <Table Columns="1">
     <ColorBox Color="#698f43">
@@ -85,30 +85,88 @@
     </ColorBox>
   </Table>
   <Table Columns="5">
-    <ColorBox Color="#453618">
+    <ColorBox Color="#3e2525">
       <Box Orientation="Vertical" Margin="5">
-        Вооружены и опасны (Оглушающее оружее, летальное оружие, пр.)
+        Тяжело вооруженные (.45, энергетический меч, пр.)
       </Box>
     </ColorBox>
-    <ColorBox Color="#453618">
+    <ColorBox Color="#3e2525">
       <Box Orientation="Vertical" Margin="5">
-        Серийные убийцы (Вне зависимости от вооружения)
+        Культисты (Пентаграммы над головой)
       </Box>
     </ColorBox>
-    <ColorBox Color="#453618">
+    <ColorBox Color="#3e2525">
       <Box Orientation="Vertical" Margin="5">
-        Культисты (Тяжело вооруженные)
+        Хозяева голопаразитов (Вне зависимости от вида паразита)
       </Box>
     </ColorBox>
-    <ColorBox Color="#453618">
+    <ColorBox Color="#3e2525">
       <Box Orientation="Vertical" Margin="5">
-        Владеющие взрывчаткой (Гранаты, бомбы, пр.)
+        Вражеские МОД-сьюты и РИГи (Вне зависимости от вида вражеского сьюта)
       </Box>
     </ColorBox>
-    <ColorBox Color="#453618">
+    <ColorBox Color="#3e2525">
       <Box Orientation="Vertical" Margin="5">
-        Лица под стимуляторами (Импланты, стимулирующие химикаты, пр.)
       </Box>
     </ColorBox>
   </Table>
+  <Table Columns="1">
+    <ColorBox Color="#43169c">
+      <Box Orientation="Vertical" Margin="5">
+        [italic]Летальная сила санкционирована - ликвидировать на месте[/italic]
+      </Box>
+    </ColorBox>
+  </Table>
+  <Table Columns="5">
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+        Ядерные оперативники (Включая отряды внедрения)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+        Культисты (Во время призыва бога)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+        Сбежавшие из пермы и лица, содержание которых невозможно (Вне пермабрига/карцера; способные к телепортации и т.п.)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+       Блюспейс сущности (Демоны, маги, ревенанты)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+        Главы революции (Не простые члены революции)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+        Прочие мерзости (Клувни)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+        Конструкты культа(Вне зависимости от вида)
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#291e3f">
+      <Box Orientation="Vertical" Margin="5">
+      </Box>
+    </ColorBox>
+  </Table>
+
+  <Box Margin="20">
+  </Box>
 </Document>
