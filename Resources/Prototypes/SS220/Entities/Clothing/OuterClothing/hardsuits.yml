@@ -106,3 +106,53 @@
       Male: MaleEngineer
       Female: FemaleEngineer
       Unsexed: MaleEngineer
+
+#Shitspawn operator centcomm HS
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitCentcomm
+  name: Бронескафандр Центрального Командования
+  description: Премиальный бронескафандр для Офицеров Центрального Командования.
+  suffix: Shitspawn
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/OuterClothing/Hardsuits/centcommhardsuit.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/OuterClothing/Hardsuits/centcommhardsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2 #ss-220 armReb
+        Slash: 0.2  #ss-220 armReb
+        Piercing: 0.2 #ss-220 armReb
+        Heat: 0.3 #ss-220 armReb
+        Radiation: 0.1  #ss-220 armReb
+        Caustic: 0.2
+        Stamina: 0.1
+  - type: Item
+    size: Huge
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9 #ss-220 armReb
+    sprintModifier: 0.9 #ss-220 armReb
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCentcomm
+  #ss220 special_sounds start
+  - type: SpecialSounds
+  - type: Vocal
+    sounds:
+      Male: MaleEvil
+      Female: FemaleEvil
+      Unsexed: MaleEvil
+  #ss220 special_sounds end
