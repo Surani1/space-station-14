@@ -74,8 +74,8 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitCentcomm
-  name: Шлем бронескафандра Центком
-  description: Премиальный шлем бронескафандра для Офицеров Центрального Командования.
+  name: centcom armor hardsuit helmet
+  description: Premium helmet of an armored hardsuit for Officers of the Central Command.
   suffix: Shitspawn
   components:
   - type: Sprite
