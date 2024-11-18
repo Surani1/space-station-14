@@ -112,8 +112,8 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitCentcomm
-  name: Бронескафандр Центрального Командования
-  description: Премиальный бронескафандр для Офицеров Центрального Командования.
+  name: central command armor hardsuit
+  description: Premium armored hardsuit for Officers of the Central Command.
   suffix: Shitspawn
   components:
   - type: Sprite
