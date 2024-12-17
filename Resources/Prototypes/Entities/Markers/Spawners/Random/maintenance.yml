@@ -148,6 +148,7 @@
         - id: ClothingNeckAromanticPin
         - id: ClothingNeckAsexualPin
         - id: ClothingNeckBisexualPin
+        - id: ClothingNeckGayPin
         - id: ClothingNeckIntersexPin
         - id: ClothingNeckLesbianPin
         - id: ClothingNeckNonBinaryPin
@@ -315,6 +316,8 @@
         - id: DrinkBankateJarFull
           prob: 0.20
       #SS220 Maint-Drinks End
+      - id: DrinkMopwataBottleRandom
+      - id: SpectralLocator
       - id: LidSalami
         weight: 0.05
 
