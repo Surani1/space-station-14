@@ -106,6 +106,9 @@ public sealed partial class ChatSystem
         { "рофлишь", "шутишь" },
         { "крч", "короче говоря" },
         { "шатл", "шаттл" },
+        //SS220 BRAINROT BEGIN
+        { "увы", "цветочек" },
+        //SS220 BRAINROT END
         // OOC
         { "афк", "ссд" },
         { "админ", "бог" },
